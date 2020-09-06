@@ -1,0 +1,90 @@
+2020-08-30T16:33:51+00:00 CRITICAL Object of class WP_Error could not be converted to string in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\inc\functions-frontend.php on line 180
+
+2020-08-30T16:34:23+00:00 CRITICAL Object of class WP_Error could not be converted to string in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\inc\functions-frontend.php on line 180
+
+2020-08-30T16:34:31+00:00 CRITICAL Object of class WP_Error could not be converted to string in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\inc\functions-frontend.php on line 180
+
+2020-08-30T17:01:13+00:00 CRITICAL Uncaught Error: Call to undefined function apus_themer_display_image() in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php:18
+Stack trace:
+#0 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include()
+#1 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_element_caro...', Array)
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(elemen...', 'do_shortcode_ta...', '[element_carous...')
+#4 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\shortcodes\kc_column.php(54): do_shortcode('[element_carous...')
+#5 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_kc_column', Array)
+#7 [internal function]: do_shortcode_tag(Array)
+#8 C:\xampp\htdocs\kreat in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php on line 18
+
+2020-08-30T17:03:43+00:00 CRITICAL Uncaught Error: Call to undefined function apus_themer_display_image() in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php:18
+Stack trace:
+#0 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include()
+#1 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_element_caro...', Array)
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(elemen...', 'do_shortcode_ta...', '[element_carous...')
+#4 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\shortcodes\kc_column.php(54): do_shortcode('[element_carous...')
+#5 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_kc_column', Array)
+#7 [internal function]: do_shortcode_tag(Array)
+#8 C:\xampp\htdocs\kreat in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php on line 18
+
+2020-08-30T17:05:51+00:00 CRITICAL Uncaught Error: Call to undefined function apus_themer_display_image() in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php:18
+Stack trace:
+#0 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include()
+#1 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_element_caro...', Array)
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(elemen...', 'do_shortcode_ta...', '[element_carous...')
+#4 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\shortcodes\kc_column.php(54): do_shortcode('[element_carous...')
+#5 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_kc_column', Array)
+#7 [internal function]: do_shortcode_tag(Array)
+#8 C:\xampp\htdocs\kreat in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php on line 18
+
+2020-08-30T17:12:46+00:00 CRITICAL Uncaught Error: Call to undefined function apus_themer_display_image() in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php:18
+Stack trace:
+#0 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include()
+#1 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_element_caro...', Array)
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(elemen...', 'do_shortcode_ta...', '[element_carous...')
+#4 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\shortcodes\kc_column.php(54): do_shortcode('[element_carous...')
+#5 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_kc_column', Array)
+#7 [internal function]: do_shortcode_tag(Array)
+#8 C:\xampp\htdocs\kreat in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php on line 18
+
+2020-08-30T17:13:51+00:00 CRITICAL Uncaught Error: Call to undefined function apus_themer_display_image() in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php:18
+Stack trace:
+#0 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include()
+#1 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_element_caro...', Array)
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(elemen...', 'do_shortcode_ta...', '[element_carous...')
+#4 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\shortcodes\kc_column.php(54): do_shortcode('[element_carous...')
+#5 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_kc_column', Array)
+#7 [internal function]: do_shortcode_tag(Array)
+#8 C:\xampp\htdocs\kreat in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php on line 18
+
+2020-08-30T17:15:43+00:00 CRITICAL Uncaught Error: Call to undefined function apus_themer_display_image() in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php:18
+Stack trace:
+#0 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include()
+#1 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_element_caro...', Array)
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(elemen...', 'do_shortcode_ta...', '[element_carous...')
+#4 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\shortcodes\kc_column.php(54): do_shortcode('[element_carous...')
+#5 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_kc_column', Array)
+#7 [internal function]: do_shortcode_tag(Array)
+#8 C:\xampp\htdocs\kreat in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php on line 18
+
+2020-08-30T17:19:10+00:00 CRITICAL Uncaught Error: Call to undefined function apus_themer_display_image() in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php:18
+Stack trace:
+#0 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include()
+#1 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_element_caro...', Array)
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(elemen...', 'do_shortcode_ta...', '[element_carous...')
+#4 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\shortcodes\kc_column.php(54): do_shortcode('[element_carous...')
+#5 C:\xampp\htdocs\kreatindo\wp-content\plugins\kingcomposer\kingcomposer.php(1545): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\kreatindo\wp-includes\shortcodes.php(343): kc_load_shortcodes->__call('kc_kc_column', Array)
+#7 [internal function]: do_shortcode_tag(Array)
+#8 C:\xampp\htdocs\kreat in C:\xampp\htdocs\kreatindo\wp-content\themes\trucking\kingcomposer\element_carousel_images.php on line 18
+

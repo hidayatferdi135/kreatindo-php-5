@@ -1,0 +1,343 @@
+// btn
+button,.btn{
+	@include transition(all 0.3s ease-in-out 0s);
+	&:hover,&:focus{
+		outline: none !important;
+	}
+}
+.btn-outline-light{
+  @include button-variant-outline( #FFFFFF, transparent,  #FFFFFF, $brand-primary, #FFFFFF, $brand-primary);
+} 
+.btn-outline{
+	@include button-outline(default, #fff, $theme-color );
+	@include button-outline(primary, $brand-primary, #fff );
+	@include button-outline(success, $brand-success, #FFFFFF );
+	@include button-outline(info, $brand-info, #FFFFFF );
+	@include button-outline(danger, $brand-danger, #FFFFFF );
+	@include button-outline(warning, $brand-warning, #FFFFFF );
+}
+.btn-inverse{
+	@include button-inverse(primary, #fff, $theme-color-second ,$theme-color-second);
+	@include button-inverse(success, $brand-success, #FFFFFF );
+	@include button-inverse(info, $brand-info, #FFFFFF );
+	@include button-inverse(danger, $brand-danger, #FFFFFF );
+	@include button-inverse(warning, $brand-warning, #FFFFFF );
+	@include button-inverse(theme, $theme-color, #FFFFFF );
+}
+.bt-contact{
+	font-size:18px;
+	font-weight:700;
+	color:$text-color;
+	i{
+		@include rtl-margin-left(10px);
+	}
+	&:hover,&:active{
+		color: #fff;
+	}
+}
+.btn-readmore{
+	font-size: 18px;
+	font-weight: 700;
+	font-family: $font-family-second;
+	i{
+	  @include rtl-margin-left(5px);
+	}
+}
+.btn.btn-lighten{
+	border-color:#fff;
+	color:#fff;
+	background: transparent;
+	&:hover{
+		color: #fff;
+		background: transparent;
+		border-color:#fff;
+	}
+}
+.btn.btn-white{
+	background: transparent;
+	color: #fff;
+	border-color: #fff;
+	&:hover{
+		color: $theme-color;
+		background: transparent;
+		border-color: $theme-color;
+	}
+}
+
+.btn-pink{
+	@include button-variant(#fff, #e3a3a2, #e3a3a2);
+}
+.btn-3d{	
+	@include button-3d(lg,0, -5px, rgba(0, 0, 0, 0.15));
+	@include button-3d(empty,0, -5px, rgba(0, 0, 0, 0.15));
+	@include button-3d(sm,0, -4px, rgba(0, 0, 0, 0.15));
+	@include button-3d(xs,0, -2px, rgba(0, 0, 0, 0.15));
+} 
+.btn-shadow{
+	@include button-3d(empty,0, -15px, rgba(0, 0, 0, 0.3),15px,-10px);
+}
+.btn-theme {
+  @include button-variant(#fff !important, $theme-color, $theme-color);
+}
+.btn-dark{
+	@include button-variant(#fff,#191815, #27292b);
+}
+.btn-theme-color-second{
+	background: $theme-color-second !important;
+	border-color:$theme-color-second !important;
+	&:hover,&:active{
+		background: darken($theme-color-second, 8%) !important;
+		border-color: darken($theme-color-second, 8%) !important;
+	}
+}
+.btn-theme-second {
+  @include button-variant(#fff, $theme-color-second, $theme-color-second);
+}
+.btn-theme.btn-outline{
+	color: #fff;
+	border-color: $theme-color;
+	background: transparent;
+	&:hover,&:active{
+		color: #fff !important;
+		background: $theme-color;
+		border-color: $theme-color;
+	}
+}
+.more-link{
+	color: $theme-color;
+    display: inline-block;
+    font-weight: 700;
+    margin: 10px 0;
+    text-transform: capitalize;
+    &:hover{
+    	text-decoration: none;
+    }
+}
+/* Search
+------------------------------------------------*/
+.search-popup{
+	.dropdown-menu{
+		padding: 10px;
+	}
+}
+.btn-action{
+	@include border-radius(4px);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 30px;
+    margin-bottom: 0;
+    padding: 0px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    @include transition(all 0.4s ease 0s);
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.searchform{
+	.input-search{
+		padding:15px;
+		@include rtl-border-right(0);
+		line-height: 1.5;
+	}
+	.btn-search{
+		vertical-align: top;
+		color: #adafac;
+		padding:12px $padding-xs-horizontal;
+	}
+	.input-group-btn{
+		line-height: 100%;
+	}
+}
+
+// Search categories
+.search-category{
+	.btn{
+		@include rtl-margin-left(10px !important);
+		@include border-radius($border-radius-small !important );
+	}
+	.wpo-search-inner{
+		label.form-control{
+			border:none;
+			border-bottom-right-radius: $border-radius-small;
+	        border-top-right-radius: $border-radius-small;
+		}
+	}
+	select {
+		border:none;
+		text-transform: capitalize;
+		font-weight: 500;
+	}
+}
+
+/* comment form
+------------------------------------------------*/
+.chosen-container{
+	width: 100% !important;
+}
+
+.input-group-form{
+	@include border-radius(3px);
+	background: $input-group-form-bg;
+	margin: $input-group-form-margin;
+	.form-control-reversed{
+		border: 0px;
+		background: $input-form-bg;
+		color: darken($white, 20%);
+	    @include font-size(font-size,14px);
+	    height: 34px;
+	    &:hover,
+	    &:focus{
+	        @include box-shadow(none);
+	    }
+	}
+	.input-group-addon{
+        border: 0;
+        background: $input-form-bg;
+        @include border-left-radius(4px);
+    }
+}
+.woocommerce #review_form #respond p{
+	margin:0;
+}
+.comment-form{
+	margin-bottom:$theme-margin;
+}
+#review_form{
+	.comment-form{
+		label{
+		    font-size: 18px;
+		    font-weight: 700;
+		    margin: 0;
+		    color: $text-color;
+		}	
+		@media(min-width:1024px){
+			.comment-form-comment,
+			.comment-form-author,
+			.comment-form-email{
+				display: table;
+				width: 100%;
+				> *{
+					display: table-cell;
+					vertical-align: middle;
+				}
+				label{
+					width: 134px;
+				}
+				input{
+					width: 100%;
+				}
+			}
+			.you-rating{
+				width: 134px;
+				@include rtl-float-left();
+			}
+			.comment-form-rating{
+				overflow: hidden;
+			}
+		}
+		input, textarea {
+			padding: 6px 15px;
+			border: 1px solid $border-color;
+			@include border-radius(0);
+		}
+	}
+}
+#reviews{
+    #comments{
+        margin: 0 ;
+        padding: 30px 0 0;
+    }
+    .commentlist{
+        padding: 0;
+    }
+	.reviews-summary {
+		.review-summary-total{
+			text-align: center;
+			font-weight: 400;
+			.review-summary-result {
+				@include size(70px, 70px);
+				text-align: center;
+				border: 2px solid $theme-color;
+				color: $theme-color;
+				line-height: 66px;
+				font-size: 20px;
+				@include border-radius(50%);
+				margin-bottom: 8px;
+			}
+		}
+		.review-summary-detal {
+			overflow: hidden;
+			display: block;
+			.review-label{
+				color: $black;
+				font-weight: 400;
+			}
+			.progress {
+			}
+		}
+	}
+	.comments{
+		padding: $theme-padding 0;
+		.commentlist {
+			margin: 15px 0;
+			.comment {
+				margin-bottom: 30px;
+			}
+			.comment-image {
+				min-width: 100px;
+				@include rtl-margin-right(20px);
+				> span {
+					display:  block;
+					margin-bottom: 5px;
+				}
+				.avatar {
+					@include border-radius(50%);
+				}
+				.author {
+					color: $black;
+				}
+			}
+			.comment-text {
+				border: 1px solid $border-color;
+				padding:  15px 30px;
+				@include border-radius( 3px);
+				> div {
+					margin-bottom: 7px;
+				}
+			}
+		}
+	}
+	.review_form_wrapper {		
+		border-top: 1px solid $border-color;
+	}
+    .title-info,
+	.comment-reply-title{
+		font-size: 20px;
+        font-weight: 700;
+        margin:25px 0 !important;
+        text-transform: uppercase;
+        font-family: $font-family-second;
+	}
+    .title-info{
+        margin: 0 0 20px !important;
+    }
+    .average-value{
+        font-size: 30px;
+        font-weight: 700;
+        color: $link-color;
+        line-height: 1.1;
+        display: inline-block;
+        border:2px solid $theme-color;
+        text-align: center;
+        @include border-radius(50%);
+        padding:17px 18px;
+        span{
+            font-size: 16px;
+            font-weight: 400;
+            display: block;
+        }
+    }
+}

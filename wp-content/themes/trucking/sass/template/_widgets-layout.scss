@@ -1,0 +1,256 @@
+/* block */
+.#{$block-selector} {
+    margin-bottom: $block-module-margin-bottom;
+    position: relative;
+    padding: $block-module-padding;
+    background: transparent;
+    clear: both;
+    .#{$block-heading-selector}{
+        font-size: 30px;
+        font-weight: 700;
+        position: relative;
+        font-family:$headings-font-family;
+        position:relative;
+        padding:0 0 18px;
+        margin:0 0 30px;  
+        &:before,&:after{
+          content: '';
+          background:$border-color;
+          @include size(100%,1px);
+          position: absolute;
+          bottom:0;
+          @include rtl-left(0);
+          z-index: 1;
+        }
+        &:after{
+          background:$theme-color;
+          @include size(60px,1px);
+          z-index: 2;
+        }
+    }
+}
+.#{$block-heading-selector}{
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    font-family:$headings-font-family;
+    position:relative;
+    padding:0 0 18px;
+    margin:0 0 30px;  
+    &:before,&:after{
+      content: '';
+      background:$border-color;
+      @include size(100%,1px);
+      position: absolute;
+      bottom:0;
+      @include rtl-left(0);
+      z-index: 1;
+    }
+    &:after{
+      background:$theme-color;
+      @include size(60px,1px);
+      z-index: 2;
+    }
+}
+.title-md{
+    font-size: 36px !important;
+    font-weight: 700 !important;
+}
+.wpb_video_widget .video-description{
+    padding: 10px;
+}
+// Sidebar
+.sidebar,
+.#{$app-prefix}-sidebar {
+    .widget{
+        margin: 0 0 40px;
+        overflow:hidden;
+        .widget-title{
+            text-transform: uppercase;
+            margin: 0 0 25px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+    ul{
+        list-style: none;
+    }
+    .widget-list.widget-products{
+        .widget-title {
+            margin: 0;
+            background: $theme-color-third;
+            color: #fff;
+            font-size: 14px;
+            padding:15px $theme-padding;
+            border:none;
+            > span{
+                border:none;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    // widet porducts list
+    .apus-products-list{
+        border-style: solid;
+        border-color: $border-color;
+        border-width:0 1px 1px;
+        .product-block{
+            padding: 20px;
+            margin: 0;
+        }
+    }
+}
+// top bar
+#apus-topbar{
+    .woocommerce-currency-switcher-form .dd-select{
+        background: transparent !important;
+        color: $topbar-color;
+    }
+    .woocommerce-currency-switcher-form a{
+        color: $topbar-color;
+        &:hover{
+            color: $link-color;
+        }
+    }
+    .widget-woocommerce-currency-switcher{ 
+        .dd-option{
+            border: none;
+        }
+    }
+    .woocommerce-currency-switcher-form .dd-selected{
+        padding: 0 10px !important;
+    }
+    // widget info
+    .info-topbar{
+        .textwidget{
+            > span{
+                @include rtl-padding-right(10px);
+                @include rtl-margin-right(10px);
+                @include rtl-float-left();
+                @include rtl-border-right(1px solid $border-color);
+                &:last-child{
+                    border: 0;
+                }
+            }
+        }
+        .fa{
+            @include rtl-margin-right(8px);
+        }
+    }
+}
+// header
+.header-setting{
+    > div{
+        @include rtl-margin-left(30px);
+    }
+    button {
+        background: transparent;
+        border:none;
+    }
+    .button-setting.dropdown-toggle {
+        margin: 5px 0 0;
+    }
+    .button-setting,
+    .mini-cart{
+        font-size: 16px;
+        font-weight: 700;
+        padding: 0;
+        line-height: 1.4;
+    }
+}
+.apus-search-form{
+    .select-category{
+        display: inline-block;
+        @include rtl-float-left();
+        overflow:hidden;
+        position: relative;
+        min-width: 240px;
+        &:before{
+            content: "\f107";
+            font-family: 'FontAwesome';
+            position: absolute;
+            @include rtl-right(30px);
+            top:50%;
+            @include translateY(-50%);
+            font-size: 18px;
+        }
+        .dropdown_product_cat{
+            border: 1px solid $border-color;
+            width: 115%;
+            height: $input-height-base;
+            padding: 10px 20px;
+        }
+    }
+}
+// footer
+.apus-footer{
+    .#{$block-selector}{
+        margin: 0 0 20px;
+        .#{$block-heading-selector}{
+            color: $footer-heding-title-color;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0 0 60px;
+            border:none;
+            &:before{
+                background:rgba(255,255,255,0.1);
+            }
+        }
+    }
+    // social
+    .widget-social .social > li a{
+        border-color:#292929;
+        &:hover{
+            border-color:$theme-color;
+        }
+    }
+    .widget-newletter {
+        .form-control{
+            border-color:#292929;
+            background: transparent;
+            @include border-radius(0);
+        }
+    }
+    // menu
+    .menu{
+        li a{
+            display: block;
+            position:relative;
+            &:before{
+                content: "\f101";
+                font-family: 'FontAwesome';
+                font-size: 16px;
+                display: inline-block;
+                @include rtl-margin-right(18px);
+                color: $footer-link-color;
+            }
+            &:active,
+            &:hover{
+                &:before{
+                    color: $footer-link-hover-color;
+                }
+            }
+        }
+    }
+}
+.footer-top{
+    border-bottom: 1px solid lighten($footer-bg,7%);
+    overflow: hidden;
+    .kc-elm{
+        @include rtl-border-right(1px solid lighten($footer-bg,7%));
+        &:last-child{
+            border:none;
+        }
+    }
+    .widget{
+        text-align: center;
+    }
+}
+// copyright
+.apus-copyright{
+    .wpb_content_element,
+    .widget{
+        margin: 0 !important;
+    }
+}
